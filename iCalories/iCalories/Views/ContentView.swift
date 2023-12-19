@@ -22,7 +22,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                 List {
                     ForEach(food) { food in
-                        NavigationLink(destination: Text("\(food.calories)")) {
+                        NavigationLink(destination: EditFoodView(food: food)) {
                             HStack {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(food.name!)
@@ -64,11 +64,22 @@ struct ContentView: View {
     }
     
     private func deleteFood(offsets: IndexSet) {
-        //pass
+        withAnimation {
+            offsets.map { food[$0] }.forEach(managedObjContext.delete)
+            
+            DataController().save(context: managedObjContext)
+        }
     }
     
     private func totalCaloriesTiday() -> Double {
-        return 0.0
+        var caloriesTaday: Double = 0
+        for item in food {
+            if Calendar.current.isDateInToday(item.date!) {
+                caloriesTaday += item.calories
+            }
+        }
+        print("Calories today: \(caloriesTaday)")
+        return caloriesTaday
     }
     
 }

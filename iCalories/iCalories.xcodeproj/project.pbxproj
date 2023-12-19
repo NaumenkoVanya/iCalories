@@ -13,6 +13,7 @@
 		CA1031F12B2C6DE000A6DD4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1031F02B2C6DE000A6DD4D /* Preview Assets.xcassets */; };
 		CA2FC4202B3191E600849E6D /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FC41F2B3191E600849E6D /* AddFoodView.swift */; };
 		CA2FC4222B3197CE00849E6D /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FC4212B3197CE00849E6D /* TimeFormatting.swift */; };
+		CA2FC4262B31AC4100849E6D /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FC4252B31AC4100849E6D /* EditFoodView.swift */; };
 		CA6B82F62B2CE3E000A334D2 /* FoodMadel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA6B82F42B2CE3E000A334D2 /* FoodMadel.xcdatamodeld */; };
 		CA6B82F82B2CE4C300A334D2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B82F72B2CE4C300A334D2 /* DataController.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		CA1031F02B2C6DE000A6DD4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA2FC41F2B3191E600849E6D /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		CA2FC4212B3197CE00849E6D /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		CA2FC4252B31AC4100849E6D /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		CA6B82F52B2CE3E000A334D2 /* FoodMadel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodMadel.xcdatamodel; sourceTree = "<group>"; };
 		CA6B82F72B2CE4C300A334D2 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				CA1031EB2B2C6DDC00A6DD4D /* ContentView.swift */,
 				CA2FC41F2B3191E600849E6D /* AddFoodView.swift */,
+				CA2FC4252B31AC4100849E6D /* EditFoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				CA6B82F82B2CE4C300A334D2 /* DataController.swift in Sources */,
 				CA1031EA2B2C6DDC00A6DD4D /* iCaloriesApp.swift in Sources */,
 				CA6B82F62B2CE3E000A334D2 /* FoodMadel.xcdatamodeld in Sources */,
+				CA2FC4262B31AC4100849E6D /* EditFoodView.swift in Sources */,
 				CA2FC4222B3197CE00849E6D /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
