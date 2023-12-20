@@ -18,7 +18,7 @@ struct ContentView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 Text("\(Int(totalCaloriesTiday())) Kcal (Today)")
-                    .foregroundColor(.gray)
+                    .foregroundColor(.black)
                     .padding(.horizontal)
                 List {
                     ForEach(food) { food in
@@ -33,11 +33,11 @@ struct ContentView: View {
                                 }
                                 Spacer()
                                 Text(calcTimeSince(date: food.date!))
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.black)
                                     .italic()
                             }
                         }
-                    }                      
+                    }
                     .onDelete(perform: deleteFood)
                 }
                 .listStyle(.plain)
@@ -59,9 +59,13 @@ struct ContentView: View {
             .sheet(isPresented: $showingAddView) {
                 AddFoodView()
             }
+            .foregroundColor(.black)
         }
+        .colorMultiply(Color(red: 0.3, green: 0.8, blue: 0.4))
         .navigationViewStyle(.stack)
+        
     }
+    
     
     private func deleteFood(offsets: IndexSet) {
         withAnimation {

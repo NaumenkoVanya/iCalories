@@ -31,13 +31,11 @@ struct AddFoodView: View {
                         DataController().addFood(name: name, colories: calories, context: managedObjContext)
                         dismiss()
                     }
+                    .colorMultiply(.teal)
                     Spacer()
                 }
-                
             }
         }
-       
-        
     }
 }
 
